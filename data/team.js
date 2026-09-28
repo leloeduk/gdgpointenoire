@@ -59,6 +59,7 @@ export const poles = [
       { type: "github", href: "https://github.com/ksthecrowned" },
       { type: "linkedin", href: "https://www.linkedin.com/in/kaiser-styve" },
       { type: "facebook", href: "https://www.facebook.com/kysr.styve" },
+      { type: "email", href: "mailto:kaiserstyve2@gmail.com" },
       { type: "whatsapp", href: "https://wa.me/242065152374" },
     ],
   },
