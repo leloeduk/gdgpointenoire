@@ -6,6 +6,7 @@ export default function Join({ dict }) {
     <section id="rejoindre" style={{ paddingTop: 0 }}>
       <div className="container">
         <div className="join">
+          <span className="join-stripe" aria-hidden="true" />
           <h2>{j.title}</h2>
           <p>{j.text}</p>
           <a

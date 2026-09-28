@@ -1,5 +1,18 @@
 import "../globals.css";
+import { Bricolage_Grotesque, Source_Sans_3 } from "next/font/google";
 import { locales, defaultLocale } from "@/data/i18n";
+
+const display = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const sans = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -29,7 +42,7 @@ export default async function LangLayout({ children, params }) {
   const htmlLang = locales.includes(lang) ? lang : defaultLocale;
 
   return (
-    <html lang={htmlLang}>
+    <html lang={htmlLang} className={`${display.variable} ${sans.variable}`}>
       <body>{children}</body>
     </html>
   );

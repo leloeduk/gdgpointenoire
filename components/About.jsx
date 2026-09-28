@@ -7,15 +7,13 @@ export default function About({ dict }) {
           <h2>{a.title}</h2>
           <p>{a.subtitle}</p>
         </div>
-        <div className="cards">
-          {a.cards.map((card) => (
-            <div className="card" key={card.title}>
-              <div className="ico" style={{ background: card.bg }}>
-                {card.icon}
-              </div>
+        <div className="pillars">
+          {a.cards.map((card, index) => (
+            <article className={`pillar tone-${index}`} key={card.title}>
+              <span className="pillar-index">0{index + 1}</span>
               <h3>{card.title}</h3>
               <p>{card.text}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

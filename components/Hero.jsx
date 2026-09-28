@@ -4,6 +4,12 @@ export default function Hero({ dict }) {
   const h = dict.hero;
   return (
     <div className="hero">
+      <div className="hero-mark" aria-hidden="true">
+        <i />
+        <i />
+        <i />
+        <i />
+      </div>
       <div className="container">
         <span className="badge">{h.badge}</span>
         <h1>

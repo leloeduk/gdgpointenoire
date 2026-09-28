@@ -7,7 +7,12 @@ export default function Members({ dict }) {
           <h2>{m.title}</h2>
           <p>{m.subtitle}</p>
         </div>
-        <p className="note">{m.note}</p>
+        <div className="empty-roster">
+          <p>{m.note}</p>
+          <a className="btn ghost" href="#rejoindre">
+            {dict.hero.joinBtn}
+          </a>
+        </div>
       </div>
     </section>
   );
